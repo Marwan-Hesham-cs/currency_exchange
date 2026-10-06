@@ -1,0 +1,21 @@
+.navbar-brand {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.navbar-brand:hover {
+    transform: scale(0.85);
+
+}
+
+body {
+    background-color: #2b3035;
+}
+
+.main-card {
+    background-color: #013b3e; 
+}
+
+input::placeholder {
+    color: #6c757d !important;
+}
