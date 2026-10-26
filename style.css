@@ -40,7 +40,6 @@ body {
     transform: scale(0.9);
 }
 
-/* لضمان ظهور خيارات القوائم بخلفية سوداء ونص أبيض */
 select option {
     background-color: #000;
     color: #fff;
