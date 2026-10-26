@@ -66,7 +66,7 @@ toCurr.addEventListener('change', update_flags);
 
 let last_val = 1; //For the swap auto conversion feature!!
 conversion.addEventListener('click', async () => {
-    let amount_val = user_input.value;
+    let amount_val = Number(user_input.value);
     if (amount_val === "") {
         amount_val = last_val; //The default value for last_value is 1 so it will work in all the cases!!
 } else if (amount_val <= 0 || isNaN(amount_val)) {
@@ -78,7 +78,7 @@ conversion.addEventListener('click', async () => {
 
     //Slight loading screen.
     display.innerHTML = `<h3 class="text-light fw-bold">Converting...</h3>`;
-    
+
     //Getting data and activating the conversion!  
     try {
         let bk_res = await fetch(`https://v6.exchangerate-api.com/v6/04990990e3d2f318c3be3d23/latest/${fromCurr.value}`);
