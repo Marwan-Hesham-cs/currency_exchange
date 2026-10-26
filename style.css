@@ -1,21 +1,119 @@
-.navbar-brand {
-    transition: transform 0.3s ease-in-out;
+*{
+box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+}
 
+
+.navbar-brand {
+transition: transform 0.3s ease-in-out;
+cursor: pointer;
+user-select: none;
 }
 
 .navbar-brand:hover {
-    transform: scale(0.85);
+transform: scale(0.85);
+cursor: pointer;
+user-select: none;
+}
 
+.navbar h2 {
+ user-select: none;
+    cursor: default;
 }
 
 body {
-    background-color: #2b3035;
+background-color: #2b3035;
 }
 
 .main-card {
-    background-color: #013b3e; 
+background-color: #013b3e; 
 }
 
-input::placeholder {
-    color: #6c757d !important;
+.main-card .amount h3 {
+color: rgb(153, 170, 180);
+}
+
+.main-card .input input {
+border: none;
+background: none;
+}
+
+.main-card .input_components {
+width: 95%;
+border-bottom: 2px solid rgb(31, 86, 227);
+}
+
+.main-card .input input:focus{
+outline: none;
+box-shadow: none;
+}
+
+
+.main-card .input_components i {
+    cursor: pointer;
+    transition: transform 0.2s ease ;
+}
+
+.main-card .input_components i:active {
+    transform: scale(0.9);
+}
+
+
+.select_from {
+position: relative;
+}
+
+#from_flag {
+position: absolute;
+left: 80px;
+}
+
+.select_to {
+    position: relative;
+}
+
+#to_flag {
+    position: absolute;
+    left: 80px;
+}
+
+@media (max-width: 958px) {
+    .select_from {
+position: relative;
+}
+
+#from_flag {
+position: absolute;
+left: 60px;
+}
+
+.select_to {
+    position: relative;
+}
+
+#to_flag {
+    position: absolute;
+    left: 60px;
+}
+}
+
+@media (max-width: 576px) {
+    .select_from {
+position: relative;
+}
+
+#from_flag {
+position: absolute;
+left: 40px;
+}
+
+.select_to {
+    position: relative;
+}
+
+#to_flag {
+    position: absolute;
+    left: 40px;
+}
 }
